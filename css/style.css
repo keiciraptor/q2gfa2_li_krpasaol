@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color: #14335a;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100vw;
+    color: white;
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+section{
+    width: 100vw;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    position: relative;
+    font-family: 'Rubik Doodle Shadow', serif;
+    font-size: xx-large;
+    text-align: center;
+    top: 10vh;
+    color: whitesmoke;
+}
+.space{
+    display: inline-block;
+    background: black url(../images/stars.gif) repeat center;
+    width: 100vw;
+    height: 93vh;
+    position: absolute;
+    z-index: -2;
+}
+.cbodies{
+    z-index: -1;
+    display: inline-block;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+#anemo{
+    background: url(../images/style/hangin.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: hanginmotion;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+}
+#chilly{
+    background: url(../images/style/nanlalamig.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: nanlalamigmotion;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+}
+#life{
+    background: url(../images/style/life.gif);
+    width: 250px;
+    height: 250px;
+    animation-name: lifemotion;
+    animation-duration: 90s;
+}
+#pink{
+    background: url(../images/style/pink.gif);
+    width: 60px;
+    height: 60px;
+    animation-name: pinkmotion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes hanginmotion{
+    from{transform: translate(-12vw,40vh);}
+    to{transform: translate(90vw, 20vh);}
+}
+@keyframes nanlalamigmotion{
+    0%{transform: skew(20deg);}
+    100%{transform: translate(60vw, 50vh);}
+}
+@keyframes lifemotion{
+    100%{transform: rotate(360deg) translate(20vw, 20vh);}
+}
+@keyframes pinkmotion{
+    0% {transform: scale(0.3,0.3);}
+    100%{transform: translate(50vw, -40vh);}
+}
